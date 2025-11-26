@@ -10,7 +10,10 @@ Near term targets for integration
  
 
 Croissant -- uses schema.org for base metadata, Croissant description contains general information about the dataset such as name, short description, license and URL. Most of these attributes are from schema.org, with a few additions described in the [Dataset-level information](https://docs.mlcommons.org/croissant/docs/croissant-spec.html#dataset-level-information).  Croissant modifies schema.org distribution to specify expected type: crs:FiileObject | crs:FileSet; also defines isLiveDataset and citeAs.  FileObject has schema:creativeWork properties, adds containedIn.  FileSet likewise, but adds containedIn, includes, excludes.  Includes and excludes are [glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) that specifies the files to include.
+
 	Recordset: how content within the resources is organized.
+
+	see also https://drive.google.com/drive/folders/1a5J20z_BnFNjGfnxeIQ7kG2BXq7iUe00?usp=drive_link
 
 
 Bagit
