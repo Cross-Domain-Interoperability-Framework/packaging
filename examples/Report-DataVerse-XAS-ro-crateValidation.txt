@@ -1,0 +1,74 @@
+Validating against RO-Crate 1.1 requirements...
+
+============================================================
+RO-Crate 1.1 Validation Results
+============================================================
+  PASS  [ 1] @context present
+  PASS  [ 2] @graph is an array (4 entities)
+  FAIL  [ 3] Metadata descriptor exists but missing/wrong conformsTo
+              Expected conformsTo @id: https://w3id.org/ro/crate/1.1
+  FAIL  [ 4] Root data entity (@id: "./") not found in @graph
+  FAIL  [ 5] Cannot check datePublished --root dataset not found
+  FAIL  [ 6] 2 entities missing @id
+              Entity indices: [2, 3]
+  PASS  [ 7] All entities have @type
+  FAIL  [ 8] 5 nested entities found (should be flat @id refs)
+              https://doi.org/10.5072/FK2/4ZSKVU -> creator; https://doi.org/10.5072/FK2/4ZSKVU -> author; https://doi.org/10.5072/FK2/4ZSKVU -> includedInDataCatalog; https://doi.org/10.5072/FK2/4ZSKVU -> publisher; https://doi.org/10.5072/FK2/4ZSKVU -> provider
+  PASS  [ 9] No @id values contain '../'
+  WARN  [10] Cannot check name --root dataset not found
+  WARN  [11] Cannot check description --root dataset not found
+  WARN  [12] Cannot check license --root dataset not found
+  WARN  [13] @context does not reference RO-Crate 1.1 context
+              Expected: https://w3id.org/ro/crate/1.1/context
+
+------------------------------------------------------------
+Summary: 4 passed, 4 warnings, 5 failures
+Result: INVALID
+
+Running rocrate-validator (severity >= REQUIRED)...
+
+============================================================
+rocrate-validator (SHACL) Results
+============================================================
+  FAIL  [ 1] [REQUIRED] RO-Crate file descriptor "ro-crate-metadata.json" is not fully flattened at entity "https://doi.org/10.5072/FK2/4ZSKVU"
+              Check: ro-crate-1.1_2.3
+  FAIL  [ 2] [REQUIRED] entity "{'@type': 'DataCatalog', 'name': 'Root', 'url': 'https://dataverse.dev.codata.org'}" is not a valid node object reference: it MUST have only @id, but no other properties.
+              Check: ro-crate-1.1_2.3
+  FAIL  [ 3] [REQUIRED] entity "{'@type': 'Organization', 'name': 'Root'}" is not a valid node object reference: it MUST have only @id, but no other properties.
+              Check: ro-crate-1.1_2.3
+  FAIL  [ 4] [REQUIRED] entity "{'@type': 'Organization', 'name': 'Root'}" is not a valid node object reference: it MUST have only @id, but no other properties.
+              Check: ro-crate-1.1_2.3
+  FAIL  [ 5] [REQUIRED] entity "{'@type': 'Person', 'givenName': 'Stephen M.', 'familyName': 'Richard', 'affiliation': {'@type': 'Organization', 'name': 'USGIN.org'}, 'name': 'Richard, Stephen M.'}" is not a valid node object reference: it MUST have only @id, but no other properties.
+              Check: ro-crate-1.1_2.3
+  FAIL  [ 6] [REQUIRED] entity "{'@type': 'Person', 'givenName': 'Stephen M.', 'familyName': 'Richard', 'affiliation': {'@type': 'Organization', 'name': 'USGIN.org'}, 'name': 'Richard, Stephen M.'}" is not a valid node object reference: it MUST have only @id, but no other properties.
+              Check: ro-crate-1.1_2.3
+  FAIL  [ 7] [REQUIRED] Entity "Se_Na2SeO4_rt_01.xdi" of RO-Crate "ro-crate-metadata.json" file descriptor does not contain the @id attribute
+              Check: ro-crate-1.1_2.4
+  FAIL  [ 8] [REQUIRED] The RO-Crate metadata file descriptor MUST have an `about` property referencing the Root Data Entity
+              Entity: ./ro-crate-metadata.json
+              Property: http://schema.org/about
+              Check: ro-crate-1.1_5.2
+  FAIL  [ 9] [REQUIRED] The RO-Crate metadata file descriptor MUST have a `conformsTo` property with the RO-Crate specification version
+              Entity: ./ro-crate-metadata.json
+              Property: http://purl.org/dc/terms/conformsTo
+              Check: ro-crate-1.1_5.3
+  FAIL  [10] [REQUIRED] The Root Data Entity MUST be a `Dataset` (as per `schema./org`)
+              Entity: ./
+              Property: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+              Check: ro-crate-1.1_9.1
+  FAIL  [11] [REQUIRED] The Root Data Entity URI MUST end with `/`
+              Entity: https://github.com/crs4/rocrate-validator/profiles/ro-crate/RootDataEntity
+              Property: n1046c6dcf3fb40a7a5eba96dd7caca38b11
+              Check: ro-crate-1.1_10.1
+  FAIL  [12] [REQUIRED] Less than 1 values on <https://doi./org/10./5072/FK2/4ZSKVU>->[ sh:inversePath <http://schema./org/hasPart> ]
+              Entity: https://doi.org/10.5072/FK2/4ZSKVU
+              Property: n82eedfbcbb82423ebdbacec8e575019fb11
+              Check: ro-crate-1.1_14.1
+
+------------------------------------------------------------
+Summary: 12 failures, 0 warnings
+Result: INVALID
+
+============================================================
+Overall: INVALID
+============================================================
