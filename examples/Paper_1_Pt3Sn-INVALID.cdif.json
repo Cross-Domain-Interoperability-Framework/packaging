@@ -1,0 +1,2861 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "./",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "dcterms:conformsTo": [
+    {
+      "@id": "https://w3id.org/ro/wfrun/process/0.1",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Process Run Crate",
+      "schema:version": "0.1"
+    },
+    {
+      "@id": "https://w3id.org/ro/wfrun/workflow/0.1",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Workflow Run Crate",
+      "schema:version": "0.1"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Workflow RO-Crate",
+      "schema:version": "1.0"
+    }
+  ],
+  "schema:datePublished": "2024-10-14T16:49:01+00:00",
+  "schema:hasPart": [
+    {
+      "@id": "workflows/bf972370cf6dfa23.ga",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "workflows/bf972370cf6dfa23",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      }
+    },
+    {
+      "@id": "workflows/bf972370cf6dfa23.gxwf.yml",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "Paper 1: XANES, LCF, EXAFS",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      },
+      "schema:subjectOf": {
+        "@id": "workflows/bf972370cf6dfa23.abstract.cwl",
+        "@type": [
+          "schema:MediaObject",
+          "schema:SoftwareSourceCode",
+          "schema:HowTo"
+        ],
+        "schema:name": "workflows/bf972370cf6dfa23.abstract",
+        "schema:programmingLanguage": {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+          "@type": [
+            "schema:ComputerLanguage"
+          ],
+          "schema:alternateName": "CWL",
+          "schema:identifier": {
+            "@id": "https://w3id.org/cwl/"
+          },
+          "schema:name": "Common Workflow Language",
+          "schema:url": {
+            "@id": "https://www.commonwl.org/"
+          }
+        }
+      },
+      "https://bioschemas.org/ComputationalWorkflow#input": [
+        {
+          "@id": "#dataset_collection-9118-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn K edge H2 under H2"
+        },
+        {
+          "@id": "#dataset_collection-9119-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn K edge H2"
+        },
+        {
+          "@id": "#dataset_collection-9120-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn K edge Ar"
+        },
+        {
+          "@id": "#dataset_collection-9121-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn K edge Air"
+        },
+        {
+          "@id": "#dataset_collection-9122-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Pt L3 edge H2 under H2"
+        },
+        {
+          "@id": "#dataset_collection-9123-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Pt L3 edge H2"
+        },
+        {
+          "@id": "#dataset_collection-9124-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Pt L3 edge Ar"
+        },
+        {
+          "@id": "#dataset_collection-9125-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Collection"
+          ],
+          "schema:description": "",
+          "schema:name": "Pt L3 edge Air"
+        },
+        {
+          "@id": "#86eb1800-e856-4bce-ac72-b6d94271e585",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn foil.prj"
+        },
+        {
+          "@id": "#3c95ac8b-e82e-46eb-b2db-d8f90a591ead",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+        },
+        {
+          "@id": "#620bf6ab-fc6f-42e7-9eb5-e3bfa6e72a9c",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "1692395.cif"
+        },
+        {
+          "@id": "#26b7fc6c-93d5-45b4-9b43-971f7d4c549d",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "1690711.cif"
+        },
+        {
+          "@id": "#a7eedcc6-fde7-494a-963c-9c313aac9b96",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "1680385.cif"
+        },
+        {
+          "@id": "#Sn foil Calibration-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Float"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn foil Calibration",
+          "schema:valueRequired": "False"
+        },
+        {
+          "@id": "#SnO2 Calibration-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Float"
+          ],
+          "schema:description": "",
+          "schema:name": "SnO2 Calibration",
+          "schema:valueRequired": "False"
+        },
+        {
+          "@id": "#Sn K edge under H2 Calibration-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Float"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn K edge under H2 Calibration",
+          "schema:valueRequired": "False"
+        },
+        {
+          "@id": "#Sn3Pt Sn Calibration-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Float"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn3Pt Sn Calibration",
+          "schema:valueRequired": "False"
+        },
+        {
+          "@id": "#Pt L3 edge under H2 Calibration-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Float"
+          ],
+          "schema:description": "",
+          "schema:name": "Pt L3 edge under H2 Calibration",
+          "schema:valueRequired": "False"
+        },
+        {
+          "@id": "#Sn3Pt Pt Calibration-param",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "Float"
+          ],
+          "schema:description": "",
+          "schema:name": "Sn3Pt Pt Calibration",
+          "schema:valueRequired": "False"
+        }
+      ]
+    },
+    {
+      "@id": "workflows/bf972370cf6dfa23.abstract.cwl",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "schema:HowTo"
+      ],
+      "schema:name": "workflows/bf972370cf6dfa23.abstract",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:alternateName": "CWL",
+        "schema:identifier": {
+          "@id": "https://w3id.org/cwl/"
+        },
+        "schema:name": "Common Workflow Language",
+        "schema:url": {
+          "@id": "https://www.commonwl.org/"
+        }
+      }
+    },
+    {
+      "@id": "workflows/bf972370cf6dfa23.html",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "workflows/bf972370cf6dfa23",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      }
+    },
+    {
+      "@id": "datasets/262929_PtSn_OCH_H2_Abu_1.dat_4cd6a6b902ae5928.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262929_PtSn_OCH_H2_Abu_1.dat"
+    },
+    {
+      "@id": "datasets/262930_PtSn_OCH_H2_Abu_2.dat_ad3dcef5f172483c.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262930_PtSn_OCH_H2_Abu_2.dat"
+    },
+    {
+      "@id": "datasets/262931_PtSn_OCH_H2_Abu_3.dat_0edecf133009aa23.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262931_PtSn_OCH_H2_Abu_3.dat"
+    },
+    {
+      "@id": "datasets/262932_PtSn_OCH_H2_Abu_4.dat_cfc405dfba1de6c0.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262932_PtSn_OCH_H2_Abu_4.dat"
+    },
+    {
+      "@id": "datasets/262885_PtSn_OCH_Abu_1.dat_4bf76727f9e6c72f.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262885_PtSn_OCH_Abu_1.dat"
+    },
+    {
+      "@id": "datasets/262886_PtSn_OCH_Abu_2.dat_676619047a31e502.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262886_PtSn_OCH_Abu_2.dat"
+    },
+    {
+      "@id": "datasets/262887_PtSn_OCH_Abu_3.dat_c030d1127c18ac4b.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262887_PtSn_OCH_Abu_3.dat"
+    },
+    {
+      "@id": "datasets/262888_PtSn_OCH_Abu_4.dat_1da457f6a84d5c0c.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262888_PtSn_OCH_Abu_4.dat"
+    },
+    {
+      "@id": "datasets/262878_PtSn_OCA_Abu_1.dat_86933a3d123c71bd.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262878_PtSn_OCA_Abu_1.dat"
+    },
+    {
+      "@id": "datasets/262879_PtSn_OCA_Abu_2.dat_43ea0ddd1ab41c09.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262879_PtSn_OCA_Abu_2.dat"
+    },
+    {
+      "@id": "datasets/262880_PtSn_OCA_Abu_3.dat_c2de473dd283bcf1.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262880_PtSn_OCA_Abu_3.dat"
+    },
+    {
+      "@id": "datasets/262881_PtSn_OCA_Abu_4.dat_db463272d57e0530.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262881_PtSn_OCA_Abu_4.dat"
+    },
+    {
+      "@id": "datasets/262875_PtSn_OCO_Abu_1.dat_a2ddc3fedfe1b725.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262875_PtSn_OCO_Abu_1.dat"
+    },
+    {
+      "@id": "datasets/262876_PtSn_OCO_Abu_2.dat_4788d985a9c586e4.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262876_PtSn_OCO_Abu_2.dat"
+    },
+    {
+      "@id": "datasets/262877_PtSn_OCO_Abu_3.dat_0130dc9d5e228c18.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "262877_PtSn_OCO_Abu_3.dat"
+    },
+    {
+      "@id": "datasets/263929_PtSn_OCH_1.dat_c1b1e33af4bbfb98.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263929_PtSn_OCH_1.dat"
+    },
+    {
+      "@id": "datasets/263930_PtSn_OCH_2.dat_2dce3cba98f791fe.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263930_PtSn_OCH_2.dat"
+    },
+    {
+      "@id": "datasets/263931_PtSn_OCH_3.dat_c289466c92d2c272.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263931_PtSn_OCH_3.dat"
+    },
+    {
+      "@id": "datasets/263932_PtSn_OCH_4.dat_8392e1ce86b3f444.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263932_PtSn_OCH_4.dat"
+    },
+    {
+      "@id": "datasets/263933_PtSn_OCH_5.dat_4abf214e1e3925e6.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263933_PtSn_OCH_5.dat"
+    },
+    {
+      "@id": "datasets/263934_PtSn_OCH_6.dat_5fa221e2b289fef6.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263934_PtSn_OCH_6.dat"
+    },
+    {
+      "@id": "datasets/263824_PtSn_OCH_1.dat_e3402f59457e3fa3.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263824_PtSn_OCH_1.dat"
+    },
+    {
+      "@id": "datasets/263825_PtSn_OCH_2.dat_0058e687a1b46bf1.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263825_PtSn_OCH_2.dat"
+    },
+    {
+      "@id": "datasets/263826_PtSn_OCH_3.dat_842f0b51123a144a.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263826_PtSn_OCH_3.dat"
+    },
+    {
+      "@id": "datasets/263827_PtSn_OCH_4.dat_e9f501a0a9984aa1.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263827_PtSn_OCH_4.dat"
+    },
+    {
+      "@id": "datasets/263828_PtSn_OCH_5.dat_cefc6764cb5ca4d3.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263828_PtSn_OCH_5.dat"
+    },
+    {
+      "@id": "datasets/263829_PtSn_OCH_6.dat_88d25e3eab53cb93.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263829_PtSn_OCH_6.dat"
+    },
+    {
+      "@id": "datasets/263830_PtSn_OCH_7.dat_44dd3fb4eede6f34.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263830_PtSn_OCH_7.dat"
+    },
+    {
+      "@id": "datasets/263831_PtSn_OCH_8.dat_37f7e1fce91e80ee.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263831_PtSn_OCH_8.dat"
+    },
+    {
+      "@id": "datasets/263814_PtSn_OCA_1.dat_8d04a279acb99b9a.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263814_PtSn_OCA_1.dat"
+    },
+    {
+      "@id": "datasets/263815_PtSn_OCA_2.dat_15302410e1974453.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263815_PtSn_OCA_2.dat"
+    },
+    {
+      "@id": "datasets/263816_PtSn_OCA_3.dat_952ad6e6c7101276.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263816_PtSn_OCA_3.dat"
+    },
+    {
+      "@id": "datasets/263817_PtSn_OCA_4.dat_978de4821554862d.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263817_PtSn_OCA_4.dat"
+    },
+    {
+      "@id": "datasets/263818_PtSn_OCA_5.dat_a61f8355770629cd.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263818_PtSn_OCA_5.dat"
+    },
+    {
+      "@id": "datasets/263819_PtSn_OCA_6.dat_c5d0080ad7a73c90.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263819_PtSn_OCA_6.dat"
+    },
+    {
+      "@id": "datasets/263845_PtSn_OCO_1.dat_93d2405bd36285f7.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263845_PtSn_OCO_1.dat"
+    },
+    {
+      "@id": "datasets/263846_PtSn_OCO_2.dat_dca8234edd2c5886.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263846_PtSn_OCO_2.dat"
+    },
+    {
+      "@id": "datasets/263847_PtSn_OCO_3.dat_4530c88b5dedd96a.tabular",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:name": "263847_PtSn_OCO_3.dat"
+    },
+    {
+      "@id": "datasets/Sn_foil.prj_b9b199e627b0df6d.prj",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#86eb1800-e856-4bce-ac72-b6d94271e585",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn foil.prj"
+      },
+      "schema:name": "Sn foil.prj"
+    },
+    {
+      "@id": "datasets/SnO2_0.9_2.6-13.5_gbkg.prj_48b3093bef30842b.prj",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#3c95ac8b-e82e-46eb-b2db-d8f90a591ead",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+      },
+      "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+    },
+    {
+      "@id": "datasets/1692395.cif_d28c7de7a4bf240d.cif",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#620bf6ab-fc6f-42e7-9eb5-e3bfa6e72a9c",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "1692395.cif"
+      },
+      "schema:name": "1692395.cif"
+    },
+    {
+      "@id": "datasets/1690711.cif_b3eebcf05996ed00.cif",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#26b7fc6c-93d5-45b4-9b43-971f7d4c549d",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "1690711.cif"
+      },
+      "schema:name": "1690711.cif"
+    },
+    {
+      "@id": "datasets/1680385.cif_d8d62840031974c8.cif",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#a7eedcc6-fde7-494a-963c-9c313aac9b96",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "1680385.cif"
+      },
+      "schema:name": "1680385.cif"
+    },
+    {
+      "@id": "datasets_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "datasets properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "jobs_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "jobs properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "implicit_collection_jobs_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "implicit collection jobs properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "collections_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "collections properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "export_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "export properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "libraries_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "libraries properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "library_folders_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "library folders properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "invocation_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "invocation properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    }
+  ],
+  "schema:license": [
+    ""
+  ],
+  "schema:mainEntity": {
+    "@id": "workflows/bf972370cf6dfa23.gxwf.yml",
+    "@type": [
+      "schema:MediaObject",
+      "schema:SoftwareSourceCode",
+      "https://bioschemas.org/ComputationalWorkflow"
+    ],
+    "schema:name": "Paper 1: XANES, LCF, EXAFS",
+    "schema:programmingLanguage": {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+      "@type": [
+        "schema:ComputerLanguage"
+      ],
+      "schema:identifier": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "schema:name": "Galaxy",
+      "schema:url": {
+        "@id": "https://galaxyproject.org/"
+      }
+    },
+    "schema:subjectOf": {
+      "@id": "workflows/bf972370cf6dfa23.abstract.cwl",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "schema:HowTo"
+      ],
+      "schema:name": "workflows/bf972370cf6dfa23.abstract",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:alternateName": "CWL",
+        "schema:identifier": {
+          "@id": "https://w3id.org/cwl/"
+        },
+        "schema:name": "Common Workflow Language",
+        "schema:url": {
+          "@id": "https://www.commonwl.org/"
+        }
+      }
+    },
+    "https://bioschemas.org/ComputationalWorkflow#input": [
+      {
+        "@id": "#dataset_collection-9118-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge H2 under H2"
+      },
+      {
+        "@id": "#dataset_collection-9119-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge H2"
+      },
+      {
+        "@id": "#dataset_collection-9120-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge Ar"
+      },
+      {
+        "@id": "#dataset_collection-9121-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge Air"
+      },
+      {
+        "@id": "#dataset_collection-9122-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge H2 under H2"
+      },
+      {
+        "@id": "#dataset_collection-9123-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge H2"
+      },
+      {
+        "@id": "#dataset_collection-9124-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge Ar"
+      },
+      {
+        "@id": "#dataset_collection-9125-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge Air"
+      },
+      {
+        "@id": "#86eb1800-e856-4bce-ac72-b6d94271e585",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn foil.prj"
+      },
+      {
+        "@id": "#3c95ac8b-e82e-46eb-b2db-d8f90a591ead",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+      },
+      {
+        "@id": "#620bf6ab-fc6f-42e7-9eb5-e3bfa6e72a9c",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "1692395.cif"
+      },
+      {
+        "@id": "#26b7fc6c-93d5-45b4-9b43-971f7d4c549d",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "1690711.cif"
+      },
+      {
+        "@id": "#a7eedcc6-fde7-494a-963c-9c313aac9b96",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "1680385.cif"
+      },
+      {
+        "@id": "#Sn foil Calibration-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Float"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn foil Calibration",
+        "schema:valueRequired": "False"
+      },
+      {
+        "@id": "#SnO2 Calibration-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Float"
+        ],
+        "schema:description": "",
+        "schema:name": "SnO2 Calibration",
+        "schema:valueRequired": "False"
+      },
+      {
+        "@id": "#Sn K edge under H2 Calibration-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Float"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge under H2 Calibration",
+        "schema:valueRequired": "False"
+      },
+      {
+        "@id": "#Sn3Pt Sn Calibration-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Float"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn3Pt Sn Calibration",
+        "schema:valueRequired": "False"
+      },
+      {
+        "@id": "#Pt L3 edge under H2 Calibration-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Float"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge under H2 Calibration",
+        "schema:valueRequired": "False"
+      },
+      {
+        "@id": "#Sn3Pt Pt Calibration-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Float"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn3Pt Pt Calibration",
+        "schema:valueRequired": "False"
+      }
+    ]
+  },
+  "schema:mentions": [
+    {
+      "@id": "#bdb469cd-b85a-4ca3-b220-a041f0172418",
+      "@type": [
+        "schema:CreateAction"
+      ],
+      "schema:endTime": "2024-10-14T16:46:03.039568",
+      "schema:instrument": {
+        "@id": "workflows/bf972370cf6dfa23.gxwf.yml",
+        "@type": [
+          "schema:MediaObject",
+          "schema:SoftwareSourceCode",
+          "https://bioschemas.org/ComputationalWorkflow"
+        ],
+        "schema:name": "Paper 1: XANES, LCF, EXAFS",
+        "schema:programmingLanguage": {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+          "@type": [
+            "schema:ComputerLanguage"
+          ],
+          "schema:identifier": {
+            "@id": "https://galaxyproject.org/"
+          },
+          "schema:name": "Galaxy",
+          "schema:url": {
+            "@id": "https://galaxyproject.org/"
+          }
+        },
+        "schema:subjectOf": {
+          "@id": "workflows/bf972370cf6dfa23.abstract.cwl",
+          "@type": [
+            "schema:MediaObject",
+            "schema:SoftwareSourceCode",
+            "schema:HowTo"
+          ],
+          "schema:name": "workflows/bf972370cf6dfa23.abstract",
+          "schema:programmingLanguage": {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+            "@type": [
+              "schema:ComputerLanguage"
+            ],
+            "schema:alternateName": "CWL",
+            "schema:identifier": {
+              "@id": "https://w3id.org/cwl/"
+            },
+            "schema:name": "Common Workflow Language",
+            "schema:url": {
+              "@id": "https://www.commonwl.org/"
+            }
+          }
+        },
+        "https://bioschemas.org/ComputationalWorkflow#input": [
+          {
+            "@id": "#dataset_collection-9118-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge H2 under H2"
+          },
+          {
+            "@id": "#dataset_collection-9119-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge H2"
+          },
+          {
+            "@id": "#dataset_collection-9120-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge Ar"
+          },
+          {
+            "@id": "#dataset_collection-9121-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge Air"
+          },
+          {
+            "@id": "#dataset_collection-9122-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge H2 under H2"
+          },
+          {
+            "@id": "#dataset_collection-9123-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge H2"
+          },
+          {
+            "@id": "#dataset_collection-9124-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge Ar"
+          },
+          {
+            "@id": "#dataset_collection-9125-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge Air"
+          },
+          {
+            "@id": "#86eb1800-e856-4bce-ac72-b6d94271e585",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn foil.prj"
+          },
+          {
+            "@id": "#3c95ac8b-e82e-46eb-b2db-d8f90a591ead",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+          },
+          {
+            "@id": "#620bf6ab-fc6f-42e7-9eb5-e3bfa6e72a9c",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "1692395.cif"
+          },
+          {
+            "@id": "#26b7fc6c-93d5-45b4-9b43-971f7d4c549d",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "1690711.cif"
+          },
+          {
+            "@id": "#a7eedcc6-fde7-494a-963c-9c313aac9b96",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "1680385.cif"
+          },
+          {
+            "@id": "#Sn foil Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn foil Calibration",
+            "schema:valueRequired": "False"
+          },
+          {
+            "@id": "#SnO2 Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "SnO2 Calibration",
+            "schema:valueRequired": "False"
+          },
+          {
+            "@id": "#Sn K edge under H2 Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge under H2 Calibration",
+            "schema:valueRequired": "False"
+          },
+          {
+            "@id": "#Sn3Pt Sn Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn3Pt Sn Calibration",
+            "schema:valueRequired": "False"
+          },
+          {
+            "@id": "#Pt L3 edge under H2 Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge under H2 Calibration",
+            "schema:valueRequired": "False"
+          },
+          {
+            "@id": "#Sn3Pt Pt Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn3Pt Pt Calibration",
+            "schema:valueRequired": "False"
+          }
+        ]
+      },
+      "schema:name": "Paper 1: XANES, LCF, EXAFS",
+      "schema:object": [
+        {
+          "@id": "#dataset_collection-9118",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9118-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge H2 under H2"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/262929_PtSn_OCH_H2_Abu_1.dat_4cd6a6b902ae5928.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262929_PtSn_OCH_H2_Abu_1.dat"
+            },
+            {
+              "@id": "datasets/262930_PtSn_OCH_H2_Abu_2.dat_ad3dcef5f172483c.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262930_PtSn_OCH_H2_Abu_2.dat"
+            },
+            {
+              "@id": "datasets/262931_PtSn_OCH_H2_Abu_3.dat_0edecf133009aa23.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262931_PtSn_OCH_H2_Abu_3.dat"
+            },
+            {
+              "@id": "datasets/262932_PtSn_OCH_H2_Abu_4.dat_cfc405dfba1de6c0.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262932_PtSn_OCH_H2_Abu_4.dat"
+            }
+          ],
+          "schema:name": "Sn K edge H2 under H2"
+        },
+        {
+          "@id": "#dataset_collection-9119",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9119-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge H2"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/262885_PtSn_OCH_Abu_1.dat_4bf76727f9e6c72f.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262885_PtSn_OCH_Abu_1.dat"
+            },
+            {
+              "@id": "datasets/262886_PtSn_OCH_Abu_2.dat_676619047a31e502.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262886_PtSn_OCH_Abu_2.dat"
+            },
+            {
+              "@id": "datasets/262887_PtSn_OCH_Abu_3.dat_c030d1127c18ac4b.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262887_PtSn_OCH_Abu_3.dat"
+            },
+            {
+              "@id": "datasets/262888_PtSn_OCH_Abu_4.dat_1da457f6a84d5c0c.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262888_PtSn_OCH_Abu_4.dat"
+            }
+          ],
+          "schema:name": "Sn K edge H2"
+        },
+        {
+          "@id": "#dataset_collection-9120",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9120-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge Ar"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/262878_PtSn_OCA_Abu_1.dat_86933a3d123c71bd.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262878_PtSn_OCA_Abu_1.dat"
+            },
+            {
+              "@id": "datasets/262879_PtSn_OCA_Abu_2.dat_43ea0ddd1ab41c09.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262879_PtSn_OCA_Abu_2.dat"
+            },
+            {
+              "@id": "datasets/262880_PtSn_OCA_Abu_3.dat_c2de473dd283bcf1.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262880_PtSn_OCA_Abu_3.dat"
+            },
+            {
+              "@id": "datasets/262881_PtSn_OCA_Abu_4.dat_db463272d57e0530.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262881_PtSn_OCA_Abu_4.dat"
+            }
+          ],
+          "schema:name": "Sn K edge Ar"
+        },
+        {
+          "@id": "#dataset_collection-9121",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9121-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge Air"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/262875_PtSn_OCO_Abu_1.dat_a2ddc3fedfe1b725.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262875_PtSn_OCO_Abu_1.dat"
+            },
+            {
+              "@id": "datasets/262876_PtSn_OCO_Abu_2.dat_4788d985a9c586e4.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262876_PtSn_OCO_Abu_2.dat"
+            },
+            {
+              "@id": "datasets/262877_PtSn_OCO_Abu_3.dat_0130dc9d5e228c18.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "262877_PtSn_OCO_Abu_3.dat"
+            }
+          ],
+          "schema:name": "Sn K edge Air"
+        },
+        {
+          "@id": "#dataset_collection-9122",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9122-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge H2 under H2"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/263929_PtSn_OCH_1.dat_c1b1e33af4bbfb98.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263929_PtSn_OCH_1.dat"
+            },
+            {
+              "@id": "datasets/263930_PtSn_OCH_2.dat_2dce3cba98f791fe.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263930_PtSn_OCH_2.dat"
+            },
+            {
+              "@id": "datasets/263931_PtSn_OCH_3.dat_c289466c92d2c272.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263931_PtSn_OCH_3.dat"
+            },
+            {
+              "@id": "datasets/263932_PtSn_OCH_4.dat_8392e1ce86b3f444.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263932_PtSn_OCH_4.dat"
+            },
+            {
+              "@id": "datasets/263933_PtSn_OCH_5.dat_4abf214e1e3925e6.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263933_PtSn_OCH_5.dat"
+            },
+            {
+              "@id": "datasets/263934_PtSn_OCH_6.dat_5fa221e2b289fef6.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263934_PtSn_OCH_6.dat"
+            }
+          ],
+          "schema:name": "Pt L3 edge H2 under H2"
+        },
+        {
+          "@id": "#dataset_collection-9123",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9123-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge H2"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/263824_PtSn_OCH_1.dat_e3402f59457e3fa3.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263824_PtSn_OCH_1.dat"
+            },
+            {
+              "@id": "datasets/263825_PtSn_OCH_2.dat_0058e687a1b46bf1.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263825_PtSn_OCH_2.dat"
+            },
+            {
+              "@id": "datasets/263826_PtSn_OCH_3.dat_842f0b51123a144a.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263826_PtSn_OCH_3.dat"
+            },
+            {
+              "@id": "datasets/263827_PtSn_OCH_4.dat_e9f501a0a9984aa1.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263827_PtSn_OCH_4.dat"
+            },
+            {
+              "@id": "datasets/263828_PtSn_OCH_5.dat_cefc6764cb5ca4d3.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263828_PtSn_OCH_5.dat"
+            },
+            {
+              "@id": "datasets/263829_PtSn_OCH_6.dat_88d25e3eab53cb93.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263829_PtSn_OCH_6.dat"
+            },
+            {
+              "@id": "datasets/263830_PtSn_OCH_7.dat_44dd3fb4eede6f34.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263830_PtSn_OCH_7.dat"
+            },
+            {
+              "@id": "datasets/263831_PtSn_OCH_8.dat_37f7e1fce91e80ee.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263831_PtSn_OCH_8.dat"
+            }
+          ],
+          "schema:name": "Pt L3 edge H2"
+        },
+        {
+          "@id": "#dataset_collection-9124",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9124-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge Ar"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/263814_PtSn_OCA_1.dat_8d04a279acb99b9a.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263814_PtSn_OCA_1.dat"
+            },
+            {
+              "@id": "datasets/263815_PtSn_OCA_2.dat_15302410e1974453.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263815_PtSn_OCA_2.dat"
+            },
+            {
+              "@id": "datasets/263816_PtSn_OCA_3.dat_952ad6e6c7101276.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263816_PtSn_OCA_3.dat"
+            },
+            {
+              "@id": "datasets/263817_PtSn_OCA_4.dat_978de4821554862d.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263817_PtSn_OCA_4.dat"
+            },
+            {
+              "@id": "datasets/263818_PtSn_OCA_5.dat_a61f8355770629cd.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263818_PtSn_OCA_5.dat"
+            },
+            {
+              "@id": "datasets/263819_PtSn_OCA_6.dat_c5d0080ad7a73c90.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263819_PtSn_OCA_6.dat"
+            }
+          ],
+          "schema:name": "Pt L3 edge Ar"
+        },
+        {
+          "@id": "#dataset_collection-9125",
+          "@type": [
+            "schema:Collection"
+          ],
+          "schema:additionalType": [
+            "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#dataset_collection-9125-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Collection"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge Air"
+          },
+          "schema:hasPart": [
+            {
+              "@id": "datasets/263845_PtSn_OCO_1.dat_93d2405bd36285f7.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263845_PtSn_OCO_1.dat"
+            },
+            {
+              "@id": "datasets/263846_PtSn_OCO_2.dat_dca8234edd2c5886.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263846_PtSn_OCO_2.dat"
+            },
+            {
+              "@id": "datasets/263847_PtSn_OCO_3.dat_4530c88b5dedd96a.tabular",
+              "@type": [
+                "schema:MediaObject"
+              ],
+              "schema:encodingFormat": [
+                "text/plain"
+              ],
+              "schema:name": "263847_PtSn_OCO_3.dat"
+            }
+          ],
+          "schema:name": "Pt L3 edge Air"
+        },
+        {
+          "@id": "datasets/Sn_foil.prj_b9b199e627b0df6d.prj",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#86eb1800-e856-4bce-ac72-b6d94271e585",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn foil.prj"
+          },
+          "schema:name": "Sn foil.prj"
+        },
+        {
+          "@id": "datasets/SnO2_0.9_2.6-13.5_gbkg.prj_48b3093bef30842b.prj",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#3c95ac8b-e82e-46eb-b2db-d8f90a591ead",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+          },
+          "schema:name": "SnO2 0.9 2.6-13.5 gbkg.prj"
+        },
+        {
+          "@id": "datasets/1692395.cif_d28c7de7a4bf240d.cif",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#620bf6ab-fc6f-42e7-9eb5-e3bfa6e72a9c",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "1692395.cif"
+          },
+          "schema:name": "1692395.cif"
+        },
+        {
+          "@id": "datasets/1690711.cif_b3eebcf05996ed00.cif",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#26b7fc6c-93d5-45b4-9b43-971f7d4c549d",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "1690711.cif"
+          },
+          "schema:name": "1690711.cif"
+        },
+        {
+          "@id": "datasets/1680385.cif_d8d62840031974c8.cif",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#a7eedcc6-fde7-494a-963c-9c313aac9b96",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "File"
+            ],
+            "schema:description": "",
+            "schema:name": "1680385.cif"
+          },
+          "schema:name": "1680385.cif"
+        },
+        {
+          "@id": "#Sn foil Calibration-pv",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#Sn foil Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn foil Calibration",
+            "schema:valueRequired": "False"
+          },
+          "schema:name": "Sn foil Calibration",
+          "schema:value": "29200.0"
+        },
+        {
+          "@id": "#SnO2 Calibration-pv",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#SnO2 Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "SnO2 Calibration",
+            "schema:valueRequired": "False"
+          },
+          "schema:name": "SnO2 Calibration",
+          "schema:value": "29219.73"
+        },
+        {
+          "@id": "#Sn K edge under H2 Calibration-pv",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#Sn K edge under H2 Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn K edge under H2 Calibration",
+            "schema:valueRequired": "False"
+          },
+          "schema:name": "Sn K edge under H2 Calibration",
+          "schema:value": "29200.0"
+        },
+        {
+          "@id": "#Sn3Pt Sn Calibration-pv",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#Sn3Pt Sn Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn3Pt Sn Calibration",
+            "schema:valueRequired": "False"
+          },
+          "schema:name": "Sn3Pt Sn Calibration",
+          "schema:value": "29204.5"
+        },
+        {
+          "@id": "#Pt L3 edge under H2 Calibration-pv",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#Pt L3 edge under H2 Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Pt L3 edge under H2 Calibration",
+            "schema:valueRequired": "False"
+          },
+          "schema:name": "Pt L3 edge under H2 Calibration"
+        },
+        {
+          "@id": "#Sn3Pt Pt Calibration-pv",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:exampleOfWork": {
+            "@id": "#Sn3Pt Pt Calibration-param",
+            "@type": [
+              "https://bioschemas.org/FormalParameter"
+            ],
+            "schema:additionalType": [
+              "Float"
+            ],
+            "schema:description": "",
+            "schema:name": "Sn3Pt Pt Calibration",
+            "schema:valueRequired": "False"
+          },
+          "schema:name": "Sn3Pt Pt Calibration"
+        }
+      ],
+      "schema:startTime": "2024-10-14T16:46:03.039565"
+    },
+    {
+      "@id": "#dataset_collection-9118",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9118-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge H2 under H2"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/262929_PtSn_OCH_H2_Abu_1.dat_4cd6a6b902ae5928.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262929_PtSn_OCH_H2_Abu_1.dat"
+        },
+        {
+          "@id": "datasets/262930_PtSn_OCH_H2_Abu_2.dat_ad3dcef5f172483c.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262930_PtSn_OCH_H2_Abu_2.dat"
+        },
+        {
+          "@id": "datasets/262931_PtSn_OCH_H2_Abu_3.dat_0edecf133009aa23.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262931_PtSn_OCH_H2_Abu_3.dat"
+        },
+        {
+          "@id": "datasets/262932_PtSn_OCH_H2_Abu_4.dat_cfc405dfba1de6c0.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262932_PtSn_OCH_H2_Abu_4.dat"
+        }
+      ],
+      "schema:name": "Sn K edge H2 under H2"
+    },
+    {
+      "@id": "#dataset_collection-9119",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9119-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge H2"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/262885_PtSn_OCH_Abu_1.dat_4bf76727f9e6c72f.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262885_PtSn_OCH_Abu_1.dat"
+        },
+        {
+          "@id": "datasets/262886_PtSn_OCH_Abu_2.dat_676619047a31e502.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262886_PtSn_OCH_Abu_2.dat"
+        },
+        {
+          "@id": "datasets/262887_PtSn_OCH_Abu_3.dat_c030d1127c18ac4b.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262887_PtSn_OCH_Abu_3.dat"
+        },
+        {
+          "@id": "datasets/262888_PtSn_OCH_Abu_4.dat_1da457f6a84d5c0c.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262888_PtSn_OCH_Abu_4.dat"
+        }
+      ],
+      "schema:name": "Sn K edge H2"
+    },
+    {
+      "@id": "#dataset_collection-9120",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9120-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge Ar"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/262878_PtSn_OCA_Abu_1.dat_86933a3d123c71bd.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262878_PtSn_OCA_Abu_1.dat"
+        },
+        {
+          "@id": "datasets/262879_PtSn_OCA_Abu_2.dat_43ea0ddd1ab41c09.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262879_PtSn_OCA_Abu_2.dat"
+        },
+        {
+          "@id": "datasets/262880_PtSn_OCA_Abu_3.dat_c2de473dd283bcf1.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262880_PtSn_OCA_Abu_3.dat"
+        },
+        {
+          "@id": "datasets/262881_PtSn_OCA_Abu_4.dat_db463272d57e0530.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262881_PtSn_OCA_Abu_4.dat"
+        }
+      ],
+      "schema:name": "Sn K edge Ar"
+    },
+    {
+      "@id": "#dataset_collection-9121",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9121-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Sn K edge Air"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/262875_PtSn_OCO_Abu_1.dat_a2ddc3fedfe1b725.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262875_PtSn_OCO_Abu_1.dat"
+        },
+        {
+          "@id": "datasets/262876_PtSn_OCO_Abu_2.dat_4788d985a9c586e4.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262876_PtSn_OCO_Abu_2.dat"
+        },
+        {
+          "@id": "datasets/262877_PtSn_OCO_Abu_3.dat_0130dc9d5e228c18.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "262877_PtSn_OCO_Abu_3.dat"
+        }
+      ],
+      "schema:name": "Sn K edge Air"
+    },
+    {
+      "@id": "#dataset_collection-9122",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9122-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge H2 under H2"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/263929_PtSn_OCH_1.dat_c1b1e33af4bbfb98.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263929_PtSn_OCH_1.dat"
+        },
+        {
+          "@id": "datasets/263930_PtSn_OCH_2.dat_2dce3cba98f791fe.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263930_PtSn_OCH_2.dat"
+        },
+        {
+          "@id": "datasets/263931_PtSn_OCH_3.dat_c289466c92d2c272.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263931_PtSn_OCH_3.dat"
+        },
+        {
+          "@id": "datasets/263932_PtSn_OCH_4.dat_8392e1ce86b3f444.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263932_PtSn_OCH_4.dat"
+        },
+        {
+          "@id": "datasets/263933_PtSn_OCH_5.dat_4abf214e1e3925e6.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263933_PtSn_OCH_5.dat"
+        },
+        {
+          "@id": "datasets/263934_PtSn_OCH_6.dat_5fa221e2b289fef6.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263934_PtSn_OCH_6.dat"
+        }
+      ],
+      "schema:name": "Pt L3 edge H2 under H2"
+    },
+    {
+      "@id": "#dataset_collection-9123",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9123-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge H2"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/263824_PtSn_OCH_1.dat_e3402f59457e3fa3.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263824_PtSn_OCH_1.dat"
+        },
+        {
+          "@id": "datasets/263825_PtSn_OCH_2.dat_0058e687a1b46bf1.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263825_PtSn_OCH_2.dat"
+        },
+        {
+          "@id": "datasets/263826_PtSn_OCH_3.dat_842f0b51123a144a.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263826_PtSn_OCH_3.dat"
+        },
+        {
+          "@id": "datasets/263827_PtSn_OCH_4.dat_e9f501a0a9984aa1.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263827_PtSn_OCH_4.dat"
+        },
+        {
+          "@id": "datasets/263828_PtSn_OCH_5.dat_cefc6764cb5ca4d3.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263828_PtSn_OCH_5.dat"
+        },
+        {
+          "@id": "datasets/263829_PtSn_OCH_6.dat_88d25e3eab53cb93.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263829_PtSn_OCH_6.dat"
+        },
+        {
+          "@id": "datasets/263830_PtSn_OCH_7.dat_44dd3fb4eede6f34.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263830_PtSn_OCH_7.dat"
+        },
+        {
+          "@id": "datasets/263831_PtSn_OCH_8.dat_37f7e1fce91e80ee.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263831_PtSn_OCH_8.dat"
+        }
+      ],
+      "schema:name": "Pt L3 edge H2"
+    },
+    {
+      "@id": "#dataset_collection-9124",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9124-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge Ar"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/263814_PtSn_OCA_1.dat_8d04a279acb99b9a.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263814_PtSn_OCA_1.dat"
+        },
+        {
+          "@id": "datasets/263815_PtSn_OCA_2.dat_15302410e1974453.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263815_PtSn_OCA_2.dat"
+        },
+        {
+          "@id": "datasets/263816_PtSn_OCA_3.dat_952ad6e6c7101276.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263816_PtSn_OCA_3.dat"
+        },
+        {
+          "@id": "datasets/263817_PtSn_OCA_4.dat_978de4821554862d.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263817_PtSn_OCA_4.dat"
+        },
+        {
+          "@id": "datasets/263818_PtSn_OCA_5.dat_a61f8355770629cd.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263818_PtSn_OCA_5.dat"
+        },
+        {
+          "@id": "datasets/263819_PtSn_OCA_6.dat_c5d0080ad7a73c90.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263819_PtSn_OCA_6.dat"
+        }
+      ],
+      "schema:name": "Pt L3 edge Ar"
+    },
+    {
+      "@id": "#dataset_collection-9125",
+      "@type": [
+        "schema:Collection"
+      ],
+      "schema:additionalType": [
+        "https://training.galaxyproject.org/training-material/faqs/galaxy/collections_build_list.html"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#dataset_collection-9125-param",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "Collection"
+        ],
+        "schema:description": "",
+        "schema:name": "Pt L3 edge Air"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "datasets/263845_PtSn_OCO_1.dat_93d2405bd36285f7.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263845_PtSn_OCO_1.dat"
+        },
+        {
+          "@id": "datasets/263846_PtSn_OCO_2.dat_dca8234edd2c5886.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263846_PtSn_OCO_2.dat"
+        },
+        {
+          "@id": "datasets/263847_PtSn_OCO_3.dat_4530c88b5dedd96a.tabular",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:encodingFormat": [
+            "text/plain"
+          ],
+          "schema:name": "263847_PtSn_OCO_3.dat"
+        }
+      ],
+      "schema:name": "Pt L3 edge Air"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "ro-crate-metadata.json",
+    "schema:about": {
+      "@id": "./"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/profiles/cdifComplete/1.0"
+      }
+    ]
+  }
+}

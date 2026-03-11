@@ -468,13 +468,24 @@ def _normalize(obj):
     return obj
 
 
+def _load_schema(schema_path):
+    """Load a JSON Schema from a local path or URL."""
+    if schema_path.startswith(("http://", "https://")):
+        import urllib.request
+        print(f"Fetching schema: {schema_path}", file=sys.stderr)
+        with urllib.request.urlopen(schema_path) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    else:
+        print(f"Loading schema: {schema_path}", file=sys.stderr)
+        with open(schema_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+
 def validate_against_schema(framed, schema_path):
     """Validate framed document against JSON Schema."""
     from jsonschema import Draft202012Validator
 
-    print(f"Loading schema: {schema_path}", file=sys.stderr)
-    with open(schema_path, "r", encoding="utf-8") as f:
-        schema = json.load(f)
+    schema = _load_schema(schema_path)
 
     validator = Draft202012Validator(schema)
     errors = list(validator.iter_errors(framed))
@@ -543,11 +554,24 @@ Examples:
             if args.schema:
                 schema_path = args.schema
             else:
-                schema_map = {
-                    "discovery": SCRIPT_DIR / "CDIFDiscoverySchema.json",
-                    "complete": SCRIPT_DIR / "CDIFCompleteSchema.json",
+                # Try local sibling validation repo first, fall back to GitHub
+                validation_dir = SCRIPT_DIR / ".." / ".." / "validation"
+                schema_filenames = {
+                    "discovery": "CDIFDiscoverySchema.json",
+                    "complete": "CDIFCompleteSchema.json",
                 }
-                schema_path = str(schema_map[args.profile])
+                filename = schema_filenames[args.profile]
+                local_path = (validation_dir / filename).resolve()
+                if local_path.exists():
+                    schema_path = str(local_path)
+                else:
+                    schema_path = (
+                        "https://raw.githubusercontent.com/"
+                        "Cross-Domain-Interoperability-Framework/validation/"
+                        f"refs/heads/main/{filename}"
+                    )
+                    if args.verbose:
+                        print(f"Local schema not found, fetching from GitHub", file=sys.stderr)
 
             result = validate_against_schema(cdif, schema_path)
             if result["valid"]:

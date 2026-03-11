@@ -1,0 +1,445 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "./",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "dcterms:conformsTo": [
+    {
+      "@id": "https://w3id.org/ro/wfrun/process/0.1",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Process Run Crate",
+      "schema:version": "0.1"
+    },
+    {
+      "@id": "https://w3id.org/ro/wfrun/workflow/0.1",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Workflow Run Crate",
+      "schema:version": "0.1"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Workflow RO-Crate",
+      "schema:version": "1.0"
+    }
+  ],
+  "schema:datePublished": "2024-09-27T10:31:12+00:00",
+  "schema:hasPart": [
+    {
+      "@id": "workflows/1a5c6ad02e8082a6.ga",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "workflows/1a5c6ad02e8082a6",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      }
+    },
+    {
+      "@id": "workflows/1a5c6ad02e8082a6.gxwf.yml",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "Workflow constructed from history ''Extracting structural information of Au colloids at ultra-dilute concentrations: identification of growth during nanoparticle immobilization (paper-3''",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      },
+      "schema:subjectOf": {
+        "@id": "workflows/1a5c6ad02e8082a6.abstract.cwl",
+        "@type": [
+          "schema:MediaObject",
+          "schema:SoftwareSourceCode",
+          "schema:HowTo"
+        ],
+        "schema:name": "workflows/1a5c6ad02e8082a6.abstract",
+        "schema:programmingLanguage": {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+          "@type": [
+            "schema:ComputerLanguage"
+          ],
+          "schema:alternateName": "CWL",
+          "schema:identifier": {
+            "@id": "https://w3id.org/cwl/"
+          },
+          "schema:name": "Common Workflow Language",
+          "schema:url": {
+            "@id": "https://www.commonwl.org/"
+          }
+        }
+      },
+      "https://bioschemas.org/ComputationalWorkflow#input": {
+        "@id": "#5e03f729-585a-44c0-9eb0-f5299397a62c",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+      }
+    },
+    {
+      "@id": "workflows/1a5c6ad02e8082a6.abstract.cwl",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "schema:HowTo"
+      ],
+      "schema:name": "workflows/1a5c6ad02e8082a6.abstract",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:alternateName": "CWL",
+        "schema:identifier": {
+          "@id": "https://w3id.org/cwl/"
+        },
+        "schema:name": "Common Workflow Language",
+        "schema:url": {
+          "@id": "https://www.commonwl.org/"
+        }
+      }
+    },
+    {
+      "@id": "workflows/1a5c6ad02e8082a6.html",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "workflows/1a5c6ad02e8082a6",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      }
+    },
+    {
+      "@id": "datasets/Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj_1.prj",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#5e03f729-585a-44c0-9eb0-f5299397a62c",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+      },
+      "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+    },
+    {
+      "@id": "datasets_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "datasets properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "jobs_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "jobs properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "implicit_collection_jobs_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "implicit collection jobs properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "collections_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "collections properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "export_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "export properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "libraries_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "libraries properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "library_folders_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "library folders properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "invocation_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "invocation properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    }
+  ],
+  "schema:license": [
+    ""
+  ],
+  "schema:mainEntity": {
+    "@id": "workflows/1a5c6ad02e8082a6.gxwf.yml",
+    "@type": [
+      "schema:MediaObject",
+      "schema:SoftwareSourceCode",
+      "https://bioschemas.org/ComputationalWorkflow"
+    ],
+    "schema:name": "Workflow constructed from history ''Extracting structural information of Au colloids at ultra-dilute concentrations: identification of growth during nanoparticle immobilization (paper-3''",
+    "schema:programmingLanguage": {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+      "@type": [
+        "schema:ComputerLanguage"
+      ],
+      "schema:identifier": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "schema:name": "Galaxy",
+      "schema:url": {
+        "@id": "https://galaxyproject.org/"
+      }
+    },
+    "schema:subjectOf": {
+      "@id": "workflows/1a5c6ad02e8082a6.abstract.cwl",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "schema:HowTo"
+      ],
+      "schema:name": "workflows/1a5c6ad02e8082a6.abstract",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:alternateName": "CWL",
+        "schema:identifier": {
+          "@id": "https://w3id.org/cwl/"
+        },
+        "schema:name": "Common Workflow Language",
+        "schema:url": {
+          "@id": "https://www.commonwl.org/"
+        }
+      }
+    },
+    "https://bioschemas.org/ComputationalWorkflow#input": {
+      "@id": "#5e03f729-585a-44c0-9eb0-f5299397a62c",
+      "@type": [
+        "https://bioschemas.org/FormalParameter"
+      ],
+      "schema:additionalType": [
+        "File"
+      ],
+      "schema:description": "",
+      "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+    }
+  },
+  "schema:mentions": {
+    "@id": "#c11186ad-4e77-43ae-8f18-21f1744094d5",
+    "@type": [
+      "schema:CreateAction"
+    ],
+    "schema:endTime": "2024-09-27T10:28:59.043905",
+    "schema:instrument": {
+      "@id": "workflows/1a5c6ad02e8082a6.gxwf.yml",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "Workflow constructed from history ''Extracting structural information of Au colloids at ultra-dilute concentrations: identification of growth during nanoparticle immobilization (paper-3''",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      },
+      "schema:subjectOf": {
+        "@id": "workflows/1a5c6ad02e8082a6.abstract.cwl",
+        "@type": [
+          "schema:MediaObject",
+          "schema:SoftwareSourceCode",
+          "schema:HowTo"
+        ],
+        "schema:name": "workflows/1a5c6ad02e8082a6.abstract",
+        "schema:programmingLanguage": {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+          "@type": [
+            "schema:ComputerLanguage"
+          ],
+          "schema:alternateName": "CWL",
+          "schema:identifier": {
+            "@id": "https://w3id.org/cwl/"
+          },
+          "schema:name": "Common Workflow Language",
+          "schema:url": {
+            "@id": "https://www.commonwl.org/"
+          }
+        }
+      },
+      "https://bioschemas.org/ComputationalWorkflow#input": {
+        "@id": "#5e03f729-585a-44c0-9eb0-f5299397a62c",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+      }
+    },
+    "schema:name": "Workflow constructed from history ''Extracting structural information of Au colloids at ultra-dilute concentrations: identification of growth during nanoparticle immobilization (paper-3''",
+    "schema:object": {
+      "@id": "datasets/Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj_1.prj",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#5e03f729-585a-44c0-9eb0-f5299397a62c",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+      },
+      "schema:name": "Compiled_XAS_data_Colloid_and_TiO2_supported_Au.prj"
+    },
+    "schema:startTime": "2024-09-27T10:28:59.043893"
+  },
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "ro-crate-metadata.json",
+    "schema:about": {
+      "@id": "./"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/profiles/cdifComplete/1.0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,678 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "./",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "dcterms:conformsTo": [
+    {
+      "@id": "https://w3id.org/ro/wfrun/process/0.1",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Process Run Crate",
+      "schema:version": "0.1"
+    },
+    {
+      "@id": "https://w3id.org/ro/wfrun/workflow/0.1",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Workflow Run Crate",
+      "schema:version": "0.1"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Workflow RO-Crate",
+      "schema:version": "1.0"
+    }
+  ],
+  "schema:datePublished": "2024-10-28T18:35:06+00:00",
+  "schema:hasPart": [
+    {
+      "@id": "workflows/0a07785dca20180d.ga",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "workflows/0a07785dca20180d",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      }
+    },
+    {
+      "@id": "workflows/0a07785dca20180d.gxwf.yml",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "Workflow to reproduce paper 8 EXAFS fitting",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      },
+      "schema:subjectOf": {
+        "@id": "workflows/0a07785dca20180d.abstract.cwl",
+        "@type": [
+          "schema:MediaObject",
+          "schema:SoftwareSourceCode",
+          "schema:HowTo"
+        ],
+        "schema:name": "workflows/0a07785dca20180d.abstract",
+        "schema:programmingLanguage": {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+          "@type": [
+            "schema:ComputerLanguage"
+          ],
+          "schema:alternateName": "CWL",
+          "schema:identifier": {
+            "@id": "https://w3id.org/cwl/"
+          },
+          "schema:name": "Common Workflow Language",
+          "schema:url": {
+            "@id": "https://www.commonwl.org/"
+          }
+        }
+      },
+      "https://bioschemas.org/ComputationalWorkflow#input": [
+        {
+          "@id": "#d71cd989-da11-4217-b71c-d72453bac70b",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Washcoat Athena project file from paper"
+        },
+        {
+          "@id": "#5b9487c3-d0ed-40f3-8a79-094e4c9d2374",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "20g ash Athena project file from paper"
+        },
+        {
+          "@id": "#f544af95-5ed7-43ea-bbb4-7dbc315227aa",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "PdO_cif_file.cif"
+        },
+        {
+          "@id": "#e7984433-8814-4b43-b8b2-1b24d2e4753d",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Pd_cif_file.cif"
+        }
+      ]
+    },
+    {
+      "@id": "workflows/0a07785dca20180d.abstract.cwl",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "schema:HowTo"
+      ],
+      "schema:name": "workflows/0a07785dca20180d.abstract",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:alternateName": "CWL",
+        "schema:identifier": {
+          "@id": "https://w3id.org/cwl/"
+        },
+        "schema:name": "Common Workflow Language",
+        "schema:url": {
+          "@id": "https://www.commonwl.org/"
+        }
+      }
+    },
+    {
+      "@id": "workflows/0a07785dca20180d.html",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "workflows/0a07785dca20180d",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      }
+    },
+    {
+      "@id": "datasets/Washcoat_Athena_project_file_from_paper_3dfde3a7417d0973.prj",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#d71cd989-da11-4217-b71c-d72453bac70b",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Washcoat Athena project file from paper"
+      },
+      "schema:name": "Washcoat Athena project file from paper"
+    },
+    {
+      "@id": "datasets/20g_ash_Athena_project_file_from_paper_cb3d3286c5ba876f.prj",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#5b9487c3-d0ed-40f3-8a79-094e4c9d2374",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "20g ash Athena project file from paper"
+      },
+      "schema:name": "20g ash Athena project file from paper"
+    },
+    {
+      "@id": "datasets/PdO_cif_file.cif_ebd697d0c147d306.cif",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#f544af95-5ed7-43ea-bbb4-7dbc315227aa",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "PdO_cif_file.cif"
+      },
+      "schema:name": "PdO_cif_file.cif"
+    },
+    {
+      "@id": "datasets/Pd_cif_file.cif_b0b2392468d82f00.cif",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:exampleOfWork": {
+        "@id": "#e7984433-8814-4b43-b8b2-1b24d2e4753d",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Pd_cif_file.cif"
+      },
+      "schema:name": "Pd_cif_file.cif"
+    },
+    {
+      "@id": "datasets_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "datasets properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "jobs_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "jobs properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "implicit_collection_jobs_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "implicit collection jobs properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "collections_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "collections properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "export_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "export properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "libraries_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "libraries properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "library_folders_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "library folders properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    },
+    {
+      "@id": "invocation_attrs.txt",
+      "@type": [
+        "schema:MediaObject"
+      ],
+      "schema:description": "invocation properties",
+      "schema:encodingFormat": [
+        "application/json"
+      ],
+      "schema:version": "2.0"
+    }
+  ],
+  "schema:license": [
+    ""
+  ],
+  "schema:mainEntity": {
+    "@id": "workflows/0a07785dca20180d.gxwf.yml",
+    "@type": [
+      "schema:MediaObject",
+      "schema:SoftwareSourceCode",
+      "https://bioschemas.org/ComputationalWorkflow"
+    ],
+    "schema:name": "Workflow to reproduce paper 8 EXAFS fitting",
+    "schema:programmingLanguage": {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+      "@type": [
+        "schema:ComputerLanguage"
+      ],
+      "schema:identifier": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "schema:name": "Galaxy",
+      "schema:url": {
+        "@id": "https://galaxyproject.org/"
+      }
+    },
+    "schema:subjectOf": {
+      "@id": "workflows/0a07785dca20180d.abstract.cwl",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "schema:HowTo"
+      ],
+      "schema:name": "workflows/0a07785dca20180d.abstract",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:alternateName": "CWL",
+        "schema:identifier": {
+          "@id": "https://w3id.org/cwl/"
+        },
+        "schema:name": "Common Workflow Language",
+        "schema:url": {
+          "@id": "https://www.commonwl.org/"
+        }
+      }
+    },
+    "https://bioschemas.org/ComputationalWorkflow#input": [
+      {
+        "@id": "#d71cd989-da11-4217-b71c-d72453bac70b",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Washcoat Athena project file from paper"
+      },
+      {
+        "@id": "#5b9487c3-d0ed-40f3-8a79-094e4c9d2374",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "20g ash Athena project file from paper"
+      },
+      {
+        "@id": "#f544af95-5ed7-43ea-bbb4-7dbc315227aa",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "PdO_cif_file.cif"
+      },
+      {
+        "@id": "#e7984433-8814-4b43-b8b2-1b24d2e4753d",
+        "@type": [
+          "https://bioschemas.org/FormalParameter"
+        ],
+        "schema:additionalType": [
+          "File"
+        ],
+        "schema:description": "",
+        "schema:name": "Pd_cif_file.cif"
+      }
+    ]
+  },
+  "schema:mentions": {
+    "@id": "#5b1292dc-6021-45f6-8f81-40d977069fc9",
+    "@type": [
+      "schema:CreateAction"
+    ],
+    "schema:endTime": "2024-09-27T15:27:15.076453",
+    "schema:instrument": {
+      "@id": "workflows/0a07785dca20180d.gxwf.yml",
+      "@type": [
+        "schema:MediaObject",
+        "schema:SoftwareSourceCode",
+        "https://bioschemas.org/ComputationalWorkflow"
+      ],
+      "schema:name": "Workflow to reproduce paper 8 EXAFS fitting",
+      "schema:programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+        "@type": [
+          "schema:ComputerLanguage"
+        ],
+        "schema:identifier": {
+          "@id": "https://galaxyproject.org/"
+        },
+        "schema:name": "Galaxy",
+        "schema:url": {
+          "@id": "https://galaxyproject.org/"
+        }
+      },
+      "schema:subjectOf": {
+        "@id": "workflows/0a07785dca20180d.abstract.cwl",
+        "@type": [
+          "schema:MediaObject",
+          "schema:SoftwareSourceCode",
+          "schema:HowTo"
+        ],
+        "schema:name": "workflows/0a07785dca20180d.abstract",
+        "schema:programmingLanguage": {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+          "@type": [
+            "schema:ComputerLanguage"
+          ],
+          "schema:alternateName": "CWL",
+          "schema:identifier": {
+            "@id": "https://w3id.org/cwl/"
+          },
+          "schema:name": "Common Workflow Language",
+          "schema:url": {
+            "@id": "https://www.commonwl.org/"
+          }
+        }
+      },
+      "https://bioschemas.org/ComputationalWorkflow#input": [
+        {
+          "@id": "#d71cd989-da11-4217-b71c-d72453bac70b",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Washcoat Athena project file from paper"
+        },
+        {
+          "@id": "#5b9487c3-d0ed-40f3-8a79-094e4c9d2374",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "20g ash Athena project file from paper"
+        },
+        {
+          "@id": "#f544af95-5ed7-43ea-bbb4-7dbc315227aa",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "PdO_cif_file.cif"
+        },
+        {
+          "@id": "#e7984433-8814-4b43-b8b2-1b24d2e4753d",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Pd_cif_file.cif"
+        }
+      ]
+    },
+    "schema:name": "Workflow to reproduce paper 8 EXAFS fitting",
+    "schema:object": [
+      {
+        "@id": "datasets/Washcoat_Athena_project_file_from_paper_3dfde3a7417d0973.prj",
+        "@type": [
+          "schema:MediaObject"
+        ],
+        "schema:encodingFormat": [
+          "text/plain"
+        ],
+        "schema:exampleOfWork": {
+          "@id": "#d71cd989-da11-4217-b71c-d72453bac70b",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Washcoat Athena project file from paper"
+        },
+        "schema:name": "Washcoat Athena project file from paper"
+      },
+      {
+        "@id": "datasets/20g_ash_Athena_project_file_from_paper_cb3d3286c5ba876f.prj",
+        "@type": [
+          "schema:MediaObject"
+        ],
+        "schema:encodingFormat": [
+          "text/plain"
+        ],
+        "schema:exampleOfWork": {
+          "@id": "#5b9487c3-d0ed-40f3-8a79-094e4c9d2374",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "20g ash Athena project file from paper"
+        },
+        "schema:name": "20g ash Athena project file from paper"
+      },
+      {
+        "@id": "datasets/PdO_cif_file.cif_ebd697d0c147d306.cif",
+        "@type": [
+          "schema:MediaObject"
+        ],
+        "schema:encodingFormat": [
+          "text/plain"
+        ],
+        "schema:exampleOfWork": {
+          "@id": "#f544af95-5ed7-43ea-bbb4-7dbc315227aa",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "PdO_cif_file.cif"
+        },
+        "schema:name": "PdO_cif_file.cif"
+      },
+      {
+        "@id": "datasets/Pd_cif_file.cif_b0b2392468d82f00.cif",
+        "@type": [
+          "schema:MediaObject"
+        ],
+        "schema:encodingFormat": [
+          "text/plain"
+        ],
+        "schema:exampleOfWork": {
+          "@id": "#e7984433-8814-4b43-b8b2-1b24d2e4753d",
+          "@type": [
+            "https://bioschemas.org/FormalParameter"
+          ],
+          "schema:additionalType": [
+            "File"
+          ],
+          "schema:description": "",
+          "schema:name": "Pd_cif_file.cif"
+        },
+        "schema:name": "Pd_cif_file.cif"
+      }
+    ],
+    "schema:startTime": "2024-09-27T15:27:15.076443"
+  },
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "ro-crate-metadata.json",
+    "schema:about": {
+      "@id": "./"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/profiles/cdifComplete/1.0"
+      }
+    ]
+  }
+}
