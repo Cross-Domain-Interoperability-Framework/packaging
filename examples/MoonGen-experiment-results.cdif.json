@@ -1,0 +1,1549 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "./",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "pos MoonGen experiment results RO-Crate",
+  "schema:description": "This RO-Crate contains results from a MoonGen-based network performance experiment conducted using a pos (plain orchestrating service) testbed. The experiment evaluates the latency and energy consumption characteristics of a network device under test (DuT) when driven by a programmable packet generator (LoadGen) using MoonGen.",
+  "schema:url": "https://doi.org/10.5281/zenodo.16606355",
+  "schema:identifier": "10.5281/zenodo.16606355",
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://orcid.org/0000-0001-6328-1047",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:affiliation": {
+          "@id": "https://ror.org/02kkvpp62",
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:location": "https://www.geonames.org/2867714",
+          "schema:name": "Technical University of Munich",
+          "schema:url": "https://www.tum.de"
+        },
+        "schema:alternateName": "warmuth",
+        "schema:familyName": "Warmuth",
+        "schema:givenName": "Kilian",
+        "schema:name": "Kilian Warmuth"
+      },
+      {
+        "@id": "https://orcid.org/0000-0002-5378-3905",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:affiliation": {
+          "@id": "https://ror.org/02kkvpp62",
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:location": "https://www.geonames.org/2867714",
+          "schema:name": "Technical University of Munich",
+          "schema:url": "https://www.tum.de"
+        },
+        "schema:alternateName": "erhauser",
+        "schema:familyName": "Hauser",
+        "schema:givenName": "Eric",
+        "schema:name": "Eric Hauser"
+      }
+    ]
+  },
+  "schema:publisher": {
+    "@id": "https://zenodo.org/",
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Zenodo"
+  },
+  "schema:dateCreated": "2025-07-30T10:18:05",
+  "schema:dateModified": "2025-07-30T13:20:31",
+  "schema:datePublished": "2025-07-30T08:18:05+00:00",
+  "schema:keywords": [
+    "research",
+    "data",
+    "science",
+    "reproducibility"
+  ],
+  "schema:license": [
+    {
+      "@id": "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:description": "Creative Commons Attribution Share Alike 4.0 International",
+      "schema:name": "cc-by-sa-4.0",
+      "schema:url": "https://zenodo.org/api/vocabularies/licenses/cc-by-sa-4.0"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "ro-crate-metadata.json",
+    "schema:about": {
+      "@id": "./"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/profiles/cdifComplete/1.0"
+      }
+    ]
+  },
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://zenodo.org/records/16606355/files/2025-07-30_10-18-05_831788.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:name": "2025-07-30_10-18-05_831788.zip",
+      "schema:hasPart": [
+        {
+          "@id": "config/vilnius/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Config information of vilnius",
+          "schema:description": "Contains detailed information about node specifc configuration like topology or hardware information",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "config/riga/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Config information of riga",
+          "schema:description": "Contains detailed information about node specifc configuration like topology or hardware information",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Scripts executed on testbed node vilnius",
+          "schema:description": "Contains executed scripts and different output logs",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "scripts/riga/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Scripts executed on testbed node riga",
+          "schema:description": "Contains executed scripts and different output logs",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "config/riga/hardware.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Hardware of testbed node riga",
+          "schema:description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 10248,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/allocation.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "warmuth_250730_101805_831788",
+          "schema:description": "Allocation details including owner, result folder, and last update timestamp.",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 281,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/riga/topology.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Network topology of testbed node riga",
+          "schema:description": "Contains network topology with neighboring nodes including link speed",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1501,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/riga/topology.pdf",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "network topology of testbed node riga",
+          "schema:description": "contains network topology figure with neighboring nodes including link speed",
+          "schema:encodingFormat": [
+            "application/pdf"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 41187,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/vilnius/hardware.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Hardware of testbed node vilnius",
+          "schema:description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 10013,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/vilnius/topology.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Network topology of testbed node vilnius",
+          "schema:description": "Contains network topology with neighboring nodes including link speed",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1498,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/vilnius/topology.pdf",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "network topology of testbed node vilnius",
+          "schema:description": "contains network topology figure with neighboring nodes including link speed",
+          "schema:encodingFormat": [
+            "application/pdf"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 41209,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "experiment_recording.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Experiment recording of allocation",
+          "schema:description": "Experiment recording of pos daemon requests",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 14530,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "config/2025-07-30_10-18-07_525986_variables.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Variable set as of 2025-07-30_10-18-07_525986",
+          "schema:description": "Contains a variable set for the allocation.",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 668,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-19-57_456970_bootstrap.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Script executed to set up the environment and install pos tools on node vilnius",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 10561,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-19-57_456970_bootstrap.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Output from bootstrap script executed on vilnius",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 11071,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-19-57_456970_bootstrap.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Output from bootstrap script executed on vilnius",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1582,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-19-57_456970_bootstrap.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Output from bootstrap script executed on vilnius",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_047711_reset.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "reset",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 4,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_047711_reset.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "reset",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 4,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_047711_reset.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "reset",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-20-00_500348_bootstrap.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Script executed to set up the environment and install pos tools on node riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 10561,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-20-00_500348_bootstrap.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Output from bootstrap script executed on riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 11071,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-20-00_500348_bootstrap.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Output from bootstrap script executed on riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1576,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-20-00_500348_bootstrap.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "bootstrap",
+          "schema:description": "Output from bootstrap script executed on riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-10_661490_reset.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "reset",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 4,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-10_661490_reset.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "reset",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 4,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-10_661490_reset.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "reset",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_845022_dut_setup_moongen-loop.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 638,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_845022_dut_setup_moongen-loop.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 37211,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_845022_dut_setup_moongen-loop.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 5668,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-18-11_845022_dut_setup_moongen-loop.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-11_493941_loadgen_setup_moongen-loop.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 391,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-11_493941_loadgen_setup_moongen-loop.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 38357,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-11_493941_loadgen_setup_moongen-loop.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 6099,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-18-11_493941_loadgen_setup_moongen-loop.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_setup_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "energy/riga/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Energy data for testbed node riga",
+          "schema:description": "Contains measured values of the energy consumption during an experiment",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "energy/vilnius/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Energy data for testbed node vilnius",
+          "schema:description": "Contains measured values of the energy consumption during an experiment",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-38_042442_loadgen-l2-load-latency_run0.command",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency_run0.command",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 122,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-38_042442_loadgen-l2-load-latency_run0.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency_run0.stdout",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 6448,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-38_042442_loadgen-l2-load-latency_run0.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency_run0.stderr",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 25,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "files/riga/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Files uploaded by testbed node riga",
+          "schema:description": "Contains files uploaded during the experiment uploaded by node {node}",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        },
+        {
+          "@id": "files/riga/histogram-l2-load-latency_run0.tar.gz.csv",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "histogram-l2-load-latency_run0.tar.gz.csv",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 29477,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "text/csv"
+          ]
+        },
+        {
+          "@id": "energy/riga/measurement_run0.csv",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Energy measurement for node riga",
+          "schema:description": "Recorded power values during experiment",
+          "schema:encodingFormat": [
+            "text/csv"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1219,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1404,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run0.loop",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 40,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run0.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 168,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run0.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 0,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run0.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-39_652926_dut-l2-load-latency_run0.command",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency_run0.command",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 56,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-39_652926_dut-l2-load-latency_run0.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency_run0.stdout",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 5840,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-39_652926_dut-l2-load-latency_run0.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency_run0.stderr",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 25,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "energy/vilnius/dut_measurement_run0.csv",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Energy measurement for node vilnius",
+          "schema:description": "Recorded power values during experiment",
+          "schema:encodingFormat": [
+            "text/csv"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1257,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 980,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run0.loop",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 40,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run0.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 98,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run0.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 0,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run0.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run0",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-17_207479_loadgen-l2-load-latency_run1.command",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency_run1.command",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 122,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-17_207479_loadgen-l2-load-latency_run1.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency_run1.stdout",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 6510,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-17_207479_loadgen-l2-load-latency_run1.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency_run1.stderr",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 25,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "files/riga/histogram-l2-load-latency_run1.tar.gz.csv",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "histogram-l2-load-latency_run1.tar.gz.csv",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 29159,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "text/csv"
+          ]
+        },
+        {
+          "@id": "energy/riga/measurement_run1.csv",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Energy measurement for node riga",
+          "schema:description": "Recorded power values during experiment",
+          "schema:encodingFormat": [
+            "text/csv"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1220,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run1.loop",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 42,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run1.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 168,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run1.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 0,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-22-00_072435_loadgen_exp_moongen-loop_run1.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-18_903010_dut-l2-load-latency_run1.command",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency_run1.command",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 56,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-18_903010_dut-l2-load-latency_run1.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency_run1.stdout",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 5840,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-18_903010_dut-l2-load-latency_run1.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency_run1.stderr",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 25,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "energy/vilnius/dut_measurement_run1.csv",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Energy measurement for node vilnius",
+          "schema:description": "Recorded power values during experiment",
+          "schema:encodingFormat": [
+            "text/csv"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1254,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run1.loop",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 42,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run1.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 98,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run1.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 0,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-22-00_445854_dut_exp_moongen-loop_run1.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_exp_moongen-loop_run1",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "CITATION.cff",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Citation metadata file",
+          "schema:description": "Citation File for this RO-Crate. See: https://citation-file-format.github.io/",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 981,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "config/2025-07-30_10-23-27_958198_variables.json",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Variable set as of 2025-07-30_10-23-27_958198",
+          "schema:description": "Contains a variable set for the allocation.",
+          "schema:encodingFormat": [
+            "application/json"
+          ],
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 668,
+            "schema:unitText": "byte"
+          }
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-24-02_972679_loadgen-l2-load-latency-single.command",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency-single.command",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 129,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-24-02_972679_loadgen-l2-load-latency-single.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency-single.stdout",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 6517,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-24-02_972679_loadgen-l2-load-latency-single.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen-l2-load-latency-single.stderr",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 25,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-28_360334_loadgen_single_moongen-loop.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 1159,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-28_360334_loadgen_single_moongen-loop.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 130,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-28_360334_loadgen_single_moongen-loop.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 0,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-23-28_360334_loadgen_single_moongen-loop.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "loadgen_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-24-03_836265_copy_riga.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "copy_riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 4,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-24-03_836265_copy_riga.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "copy_riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 4,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/riga/2025-07-30_10-24-03_836265_copy_riga.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "copy_riga",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-24-04_470451_dut-l2-load-latency-single.command",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency-single.command",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 56,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "config/README.md",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "test",
+          "schema:description": "This is a test",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 325,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-24-04_470451_dut-l2-load-latency-single.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency-single.stdout",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 5766,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-24-04_470451_dut-l2-load-latency-single.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut-l2-load-latency-single.stderr",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 25,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-28_739065_dut_single_moongen-loop.file",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 902,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-28_739065_dut_single_moongen-loop.stdout",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 119,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-28_739065_dut_single_moongen-loop.stderr",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 0,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "scripts/vilnius/2025-07-30_10-23-28_739065_dut_single_moongen-loop.status",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "dut_single_moongen-loop",
+          "schema:size": {
+            "@type": "schema:QuantitativeValue",
+            "schema:value": 8,
+            "schema:unitText": "byte"
+          },
+          "schema:encodingFormat": [
+            "application/octet-stream"
+          ]
+        },
+        {
+          "@id": "malleable_reproduction/",
+          "@type": [
+            "schema:MediaObject"
+          ],
+          "schema:name": "Reconstructed experiment folder",
+          "schema:description": "This folder contains a reconstructed version of the original experiment, including configuration and all necessary files, to enable the malleable reproduction of the experiment.",
+          "schema:encodingFormat": [
+            "inode/directory"
+          ]
+        }
+      ]
+    }
+  ],
+  "dcterms:bibliographicCitation": {
+    "@id": "https://doi.org/10.5281/zenodo.16606355",
+    "@type": [
+      "schema:ScholarlyArticle"
+    ]
+  }
+}

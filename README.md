@@ -65,7 +65,11 @@ See [docs/RO-Crate-relationship.md](docs/RO-Crate-relationship.md) for detailed 
 
 ## Examples
 
-The `examples/` directory contains RO-Crate files generated from ADA/CDIF test metadata. Files with `-INVALID` in the name are older examples that do not pass RO-Crate validation (kept for reference).
+The `examples/` directory contains RO-Crate files and CDIF conversion outputs:
+
+- `MoonGen-experiment-results.cdif.json` — CDIF cdifComplete record generated from a [pos MoonGen testbed RO-Crate](https://doi.org/10.5281/zenodo.16606355) using `ROCrateToCDIF.py`. Demonstrates archive distribution with 95 component files, authors with ORCIDs, and institutional affiliation. Validates against both cdifComplete JSON Schema and SHACL shapes.
+- `FeS2-Analysis.cdifprov.json` — cdifProv conversion of a Galaxy workflow RO-Crate (from [prov-context-quality](https://github.com/Cross-Domain-Interoperability-Framework/prov-context-quality))
+- Files with `-INVALID` in the name are older examples that do not pass RO-Crate validation (kept for reference).
 
 ---
 
