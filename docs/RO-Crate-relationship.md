@@ -341,6 +341,31 @@ python tools/ValidateROCrate.py input.jsonld -v
 | 12 | WARN | Root dataset has `license` |
 | 13 | WARN | `@context` references the RO-Crate 1.1 context URL |
 
+## RO-Crate Bundles → cdifComplete (Archive Distribution)
+
+RO-Crates that package files without workflow provenance — such as experiment result bundles, data archives, or repository exports — map naturally to the CDIF **cdifArchiveDistribution** building block pattern. In this pattern:
+
+- The RO-Crate root Dataset becomes the CDIF `schema:Dataset` root.
+- RO-Crate metadata (authors, dates, license, description) maps to root-level CDIF properties: `schema:creator` (with `@list`), `schema:datePublished`, `schema:license`, etc.
+- The crate contents become `schema:hasPart` items inside a `schema:distribution` of type `schema:DataDownload`, where `schema:contentUrl` points to the downloadable archive (e.g., a Zenodo zip URL).
+- Each component file is typed as `schema:MediaObject` with `schema:name`, `schema:encodingFormat` (MIME type), and optionally `schema:size` (as `schema:QuantitativeValue`). Component files must NOT be typed as `schema:DataDownload` since they are not independently accessible.
+
+The `ROCrateToCDIF.py` converter handles this transformation. See `examples/MoonGen-experiment-results.cdif.json` for a validated example generated from a [pos MoonGen testbed RO-Crate](https://doi.org/10.5281/zenodo.16606355).
+
+## Workflow Run RO-Crates (WRROC)
+
+[Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/) (WRROC) profiles extend RO-Crate with provenance information about computational workflow executions. These include:
+
+- **Process Run Crate** — single-step executions (`CreateAction`)
+- **Workflow Run Crate** — multi-step workflow executions with `CreateAction` per step
+- **Provenance Run Crate** — detailed retrospective provenance with CWL records
+
+WRROC-to-CDIF conversion targets the **cdifProv** building block rather than cdifComplete, and is handled by tools in the [prov-context-quality](https://github.com/Cross-Domain-Interoperability-Framework/prov-context-quality) repository:
+
+- **WRROCToCdifProv.py** — converts standard WRROC and ARC Workflow Run RO-Crate profiles to cdifProv `@graph` documents
+- **galaxyROCrateToCDIF.py** — converts full Galaxy RO-Crate archives to cdifProv with per-step methodology detail (HowTo/HowToStep approach)
+- **galaxyROCrateToCDIFActions.py** — multi-activity variant producing separate `prov:Activity` per workflow step with `prov:wasInformedBy` data-flow links
+
 ## Round-Trip Example
 
 A complete round-trip demonstrating both conversions:

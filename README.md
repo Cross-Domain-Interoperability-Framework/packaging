@@ -71,6 +71,10 @@ The `examples/` directory contains RO-Crate files and CDIF conversion outputs:
 - `FeS2-Analysis.cdifprov.json` — cdifProv conversion of a Galaxy workflow RO-Crate (from [prov-context-quality](https://github.com/Cross-Domain-Interoperability-Framework/prov-context-quality))
 - Files with `-INVALID` in the name are older examples that do not pass RO-Crate validation (kept for reference).
 
+## Workflow Run RO-Crates
+
+Workflow Run RO-Crate (WRROC) conversions to cdifProv are handled in the [prov-context-quality](https://github.com/Cross-Domain-Interoperability-Framework/prov-context-quality) repository, which contains tools for converting standard WRROC, ARC, and Galaxy workflow RO-Crates to CDIF provenance records. See [docs/RO-Crate-relationship.md](docs/RO-Crate-relationship.md) for details.
+
 ---
 
 ## History Notes
