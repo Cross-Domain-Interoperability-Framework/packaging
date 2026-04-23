@@ -37,7 +37,7 @@ Both profiles and RO-Crate use schema.org as their primary vocabulary, so many p
 | `schema:description` | `description` | Direct mapping |
 | `schema:dateModified` | `datePublished` | RO-Crate requires `datePublished` (MUST); CDIF uses `dateModified`. Use `schema:datePublished` if present, fall back to `dateModified` |
 | `schema:identifier` | `identifier` | CDIF uses structured `PropertyValue`; RO-Crate recommends DOI URI string |
-| `schema:license` | `license` | CDIF stores as array of URI strings; RO-Crate expects `{"@id": "..."}` reference to a contextual entity |
+| `schema:license` | `license` | CDIF array of either strings or {"@id": "..."} references; RO-Crate expects `{"@id": "..."}` reference to a contextual entity |
 | `schema:url` | `url` | Direct mapping (landing page). CDIF requires either `url` or `distribution` |
 | `schema:keywords` | `keywords` | CDIF allows mixed `DefinedTerm` objects and strings; RO-Crate expects strings or `DefinedTerm` references |
 | `schema:creator` | `author` | CDIF uses `schema:creator` with `@list`; RO-Crate uses `author` with entity references |
